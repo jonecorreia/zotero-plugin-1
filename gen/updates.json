@@ -1,0 +1,17 @@
+{
+  "addons": {
+    "z-plugin@correia.xyz": {
+      "updates": [
+        {
+          "version": "0.0.1.jonec.R9-Master",
+          "update_link": "https://github.com//zotero-z-plugin/releases/download/v0.0.1.jonec.R9-Master/zotero-z-plugin-0.0.1.jonec.R9-Master.xpi",
+          "applications": {
+            "zotero": {
+              "strict_min_version": "6.999"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
