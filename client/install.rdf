@@ -3,24 +3,24 @@
         xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
     <Description about="urn:mozilla:install-manifest">
-        <em:id>.zotero-z-plugin@correia.xyz.</em:id>
-        <em:name>Z Plugin</em:name>
+        <em:id>.zotero-plugin-1@correia.xyz.</em:id>
+        <em:name>Plugin para o zotero. Auxílio para realizar revisão terciária</em:name>
         <em:version>1.1</em:version>
         <em:multiprocessCompatible>true</em:multiprocessCompatible>
-        <em:updateURL>https://zotero-download.s3.amazonaws.com/tmp/zotero-z-plugin/updates-1.1.json</em:updateURL>
+        <em:updateURL>https://zotero-download.s3.amazonaws.com/tmp/zotero-plugin-1/updates-1.1.json</em:updateURL>
         <em:homepageURL>https://github.com/zotero/make-it-red</em:homepageURL>
         <em:localized>
             <Description>
                 <em:locale>en-US</em:locale>
-                <em:name>Z Plugin </em:name>
-                <em:description>Z Plugin</em:description>
+                <em:name>Plugin para o zotero. Auxílio para realizar revisão terciária </em:name>
+                <em:description>Plugin para o zotero. Auxílio para realizar revisão terciária</em:description>
             </Description>
         </em:localized>
 
         <em:creator>Zotero</em:creator>
         <em:type>2</em:type> <!-- type=extension -->
-        <em:iconURL>chrome://zotero-z-plugin/skin/icon.png</em:iconURL>
-        <em:icon64URL>chrome://zotero-z-plugin/skin/icon64.png</em:icon64URL>
+        <em:iconURL>chrome://zotero-plugin-1/skin/icon.png</em:iconURL>
+        <em:icon64URL>chrome://zotero-plugin-1/skin/icon64.png</em:icon64URL>
 
         <em:targetApplication>
             <Description>

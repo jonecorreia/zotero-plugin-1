@@ -1,4 +1,4 @@
 content   make-it-red             chrome/content/
 skin      make-it-red   default   chrome/skin/
-locale zotero-z-plugin en-US     chrome/locale/en-US/
-overlay	chrome://zotero/content/zoteroPane.xul chrome://zotero-z-plugin/content/overlay.xul
+locale zotero-plugin-1 en-US     chrome/locale/en-US/
+overlay	chrome://zotero/content/zoteroPane.xul chrome://zotero-plugin-1/content/overlay.xul

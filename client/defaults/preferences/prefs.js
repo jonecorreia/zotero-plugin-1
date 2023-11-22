@@ -1,1 +1,1 @@
-pref("extensions.zotero-z-plugin.intensity", 100);
+pref("extensions.zotero-plugin-1.intensity", 100);

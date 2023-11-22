@@ -1,6 +1,6 @@
-Zotero.ZPlugin = new class {
+Zotero.zoterojoneplugin = new class {
   log(msg) {
-    Zotero.debug(`Z Plugin: ${  msg}`)
+    Zotero.debug(`Plugin para o zotero. Auxílio para realizar revisão terciária: ${  msg}`)
   }
 
   foo() {
@@ -9,7 +9,7 @@ Zotero.ZPlugin = new class {
     const host = new URL('https://foo.com/path').host
     this.log(`Host is ${host}`)
 
-    this.log(`Intensity is ${Zotero.Prefs.get('extensions.zotero-z-plugin.intensity', true)}`)
+    this.log(`Intensity is ${Zotero.Prefs.get('extensions.zotero-plugin-1.intensity', true)}`)
   }
 
   toggleGreen(enabled) {

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<?xml-stylesheet href="chrome://zotero-z-plugin/skin/overlay.css" type="text/css"?>
+<?xml-stylesheet href="chrome://zotero-plugin-1/skin/overlay.css" type="text/css"?>
 
-<overlay id="zotero-z-plugin-overlay"
+<overlay id="zotero-plugin-1-overlay"
 		xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	<script src="overlay.js"/>
 	<script src="lib.js"/>
@@ -9,6 +9,6 @@
 	<menupopup id="menu_viewPopup">
 		<menuitem id="make-it-green-instead"
 				  type="checkbox"
-				  oncommand="Zotero.ZPlugin.toggleGreen(this.getAttribute('checked') === 'true')"/>
+				  oncommand="Zotero.zoterojoneplugin.toggleGreen(this.getAttribute('checked') === 'true')"/>
 	</menupopup>
 </overlay>

@@ -2,8 +2,8 @@
 
 declare const ChromeUtils: any
 
-var stylesheetID = 'zotero-z-plugin-stylesheet'
-var ftlID = 'zotero-z-plugin-ftl'
+var stylesheetID = 'zotero-plugin-1-stylesheet'
+var ftlID = 'zotero-plugin-1-ftl'
 var menuitemID = 'make-it-green-instead'
 var addedElementIDs = [stylesheetID, ftlID, menuitemID]
 
@@ -12,7 +12,7 @@ if (typeof Zotero == 'undefined') {
 }
 
 function log(msg) {
-  Zotero.debug(`Z Plugin: ${  msg}`)
+  Zotero.debug(`Plugin para o zotero. Auxílio para realizar revisão terciária: ${  msg}`)
 }
 
 // In Zotero 7, bootstrap methods are not called until Zotero is initialized, and the 'Zotero' is
@@ -50,7 +50,7 @@ async function startup({ id, version, resourceURI, rootURI = resourceURI.spec })
     const link2 = doc.createElement('link')
     link2.id = ftlID
     link2.rel = 'localization'
-    link2.href = 'zotero-z-plugin.ftl'
+    link2.href = 'zotero-plugin-1.ftl'
     doc.documentElement.appendChild(link2)
 
     // createXULElement() is available in Zotero 7
@@ -59,7 +59,7 @@ async function startup({ id, version, resourceURI, rootURI = resourceURI.spec })
     menuitem.setAttribute('type', 'checkbox')
     menuitem.setAttribute('data-l10n-id', 'make-it-green-instead')
     menuitem.addEventListener('command', () => {
-      Zotero.ZPlugin.toggleGreen(menuitem.getAttribute('checked') === 'true')
+      Zotero.zoterojoneplugin.toggleGreen(menuitem.getAttribute('checked') === 'true')
     })
     doc.getElementById('menu_viewPopup').appendChild(menuitem)
   }
@@ -70,7 +70,7 @@ async function startup({ id, version, resourceURI, rootURI = resourceURI.spec })
   }
   // Load chrome/content file directly via file:/// URL
   Services.scriptloader.loadSubScript(`${rootURI  }chrome/content/lib.js`)
-  Zotero.ZPlugin.foo()
+  Zotero.zoterojoneplugin.foo()
 }
 
 function shutdown() {
@@ -84,7 +84,7 @@ function shutdown() {
     }
   }
 
-  Zotero.ZPlugin = undefined
+  Zotero.zoterojoneplugin = undefined
 }
 
 function uninstall() {

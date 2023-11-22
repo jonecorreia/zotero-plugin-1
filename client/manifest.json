@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "Z Plugin",
+  "name": "Plugin para o zotero. Auxílio para realizar revisão terciária",
   "version": "0.0.1",
-  "description": "Z Plugin",
+  "description": "Plugin para o zotero. Auxílio para realizar revisão terciária",
   "applications": {
     "zotero": {
-      "id": "zotero-z-plugin@correia.xyz",
-      "update_url": "https://github.com//zotero-z-plugin/releases/download/release/update.rdf",
+      "id": "zotero-plugin-1@correia.xyz",
+      "update_url": "https://github.com/https://github.com/jonecorreia/zotero-plugin-1/zotero-plugin-1/releases/download/release/update.rdf",
       "strict_min_version": "6.999",
       "strict_max_version": "7.0.*"
     }
